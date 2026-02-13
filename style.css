@@ -19,6 +19,7 @@ html{
     background-size: cover;
     background-position: center;  
     margin-bottom: 0;  
+    animation: slideDown 0.8s ease forwards;
 }
 
 
@@ -30,7 +31,7 @@ html{
     /* z-index: 1100; */
     font-size: 32px;
   }
- 
+
 nav{
     display: flex;
     align-items: center;
@@ -46,8 +47,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1000;
-    min-width: 1200px;
-    animation: slideDown 0.8s ease forwards;
+   
 }
 
 
@@ -62,11 +62,14 @@ nav{
   }
 }
 
+.logo1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 0;
+}
 
 .logo2{
-    font-size: 20px;
-    white-space: nowrap;
-    margin-right: 10px;
+    font-size: 18px;
 }
 
 .links{
@@ -816,20 +819,7 @@ form input, form textarea{
   font-size: 1.2rem;
   }
 
-  .services {
-    /* align-items: center ;
-    padding: 80px 10%;
-    text-align: center;
-    justify-content: center; */
-
-    /* display: flex;
-    flex-direction: row;
-    gap: 25px;
-    align-items: center;
-    justify-content: center;
-    width: 100vh; */
-
-  }
+ 
 
   .service-grid {
   padding: 20px 60px;
