@@ -63,9 +63,9 @@ nav{
 }
 
 .logo1{
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 0;
+ height: 40px;
+ width: auto;
+ object-fit: contain;
 }
 
 .logo2{
@@ -278,6 +278,86 @@ nav{
   color: white;
   transform: translateY(-10px);
 }
+
+
+
+/* CONDITIONS */
+.conditions-section {
+  padding: 80px 8%;
+  background: #f9fbfd;
+  font-family: 'Poppins', sans-serif;
+}
+
+.conditions-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.conditions-header .subtitle {
+  color: #1a8cff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.conditions-header h2 {
+  font-size: 36px;
+  margin: 15px 0;
+  color: #0b2545;
+}
+
+.conditions-header .description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.condition-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.condition-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.condition-card h3 {
+  font-size: 20px;
+  margin: 20px 20px 10px;
+  color: #0b2545;
+}
+
+.condition-card p {
+  font-size: 15px;
+  color: #666;
+  margin: 0 20px 25px;
+  line-height: 1.5;
+}
+
+.condition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(26, 140, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .conditions-header h2 {
+    font-size: 28px;
+  }
+}
+
 
 
 /* ABOUT US */
@@ -833,6 +913,11 @@ form input, form textarea{
   .service-card {
     padding: 28px 20px;
     
+  }
+  
+  /* =====================conditions================= */ 
+   .conditions-header h2 {
+    font-size: 28px;
   }
 
 
